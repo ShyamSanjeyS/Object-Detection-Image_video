@@ -1,10 +1,6 @@
-
----
-
-````markdown
 # Real-Time Object Detection
 
-This project demonstrates real-time object detection using the YOLO (You Only Look Once) model. It allows you to perform object detection on both image and video files, drawing bounding boxes around detected objects along with their class labels and confidence scores.
+This project demonstrates real-time object detection using the YOLO (You Only Look Once) model. It supports both **image** and **video** input, drawing bounding boxes around detected objects with their class labels and confidence scores.
 
 ## Table of Contents
 
@@ -12,27 +8,30 @@ This project demonstrates real-time object detection using the YOLO (You Only Lo
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
+- [Sample Output](#sample-output)
 - [License](#license)
 
 ## Installation
 
-To run this project locally, follow these steps:
+To get started with the project, follow these steps:
 
-1. Clone the repository to your local machine:
+1. **Clone the repository**
 
    ```bash
    git clone https://github.com/ShyamSanjeyS/Real-Time-Object-Detection-Iamge-Video.git
-   cd Real-Time-Object-Detection
-````
+   cd Real-Time-Object-Detection-Iamge-Video
+   ```
 
-2. Create and activate a virtual environment (optional but recommended):
+   [🔗 GitHub Repo Link](https://github.com/ShyamSanjeyS/Real-Time-Object-Detection-Iamge-Video)
+
+2. **Create and activate a virtual environment** (optional but recommended):
 
    ```bash
    python -m venv venv
-   venv\Scripts\activate  # Windows
+   venv\Scripts\activate  # For Windows
    ```
 
-3. Install the required Python packages using pip:
+3. **Install dependencies**:
 
    ```bash
    pip install -r requirements.txt
@@ -40,24 +39,26 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-1. Make sure you have your image file (e.g., `img1.jpg`) or video file (e.g., `video1.mp4`), and class names file (`classes.txt`) in the `data/` directory. You can customize these files as needed.
+1. Place your input files inside the `data/` folder:
+   - Image file (e.g., `img1.jpg`)
+   - Video file (e.g., `video1.mp4`)
+   - Class labels file (`classes.txt`)
 
-2. Run the object detection script from the project root:
+2. Run the main script:
 
    ```bash
    python main.py
    ```
 
-3. When prompted, enter `image` or `video` depending on the input you want to process.
+3. Choose the input type when prompted:
+   - Type `image` for image detection
+   - Type `video` for video detection
 
-4. The object detection results will be displayed in a resizable `Object Detection` window.
-
-   * For image: Press any key to close the window.
-   * For video: Press `q` to quit.
+4. Output behavior:
+   - For **images**: A window will display the results. Press any key to close.
+   - For **videos**: The detection will play frame by frame. Press `q` to quit.
 
 ## Project Structure
-
-The project follows this directory structure:
 
 ```
 Real-Time-Object-Detection/
@@ -68,6 +69,10 @@ Real-Time-Object-Detection/
 │   ├── classes.txt
 │   └── yolo-Weights/
 │       └── yolov8n.pt
+│
+├── output/
+│   ├── output_image.png
+│   └── output_video.png
 │
 ├── src/
 │   ├── __init__.py
@@ -80,24 +85,29 @@ Real-Time-Object-Detection/
 └── main.py
 ```
 
-* `data/`: Contains image, video, weights, and class name files.
-* `src/`: Contains separate scripts for image and video object detection.
-* `main.py`: Entry point that allows choosing between image and video detection.
-* `requirements.txt`: Lists project dependencies.
+- `data/`: Input images, videos, model weights, and class label files.
+- `src/`: Core logic for object detection (image/video) and utilities.
+- `main.py`: Entry point to run the project.
+- `output/`: Stores output results (images/frames).
+- `requirements.txt`: Lists all dependencies.
 
 ## Requirements
 
-* Python 3.x
-* OpenCV (`opencv-python`)
-* Ultralytics (`ultralytics`)
+Ensure you have the following installed:
 
-You can install the required packages using pip as shown in the installation section.
+- Python 3.x
+- OpenCV (`opencv-python`)
+- Ultralytics (`ultralytics`)
+
+Install all packages using:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Sample Output
 
-Here are sample outputs from the object detection system:
-
-### 🔹 Image Detection
+### 🔹 Image Detection Output
 
 ![Image Detection Output](output/output_image.png)
 
@@ -109,10 +119,4 @@ Here are sample outputs from the object detection system:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-```
-
----
-
-
+This project is licensed under the [MIT License](LICENSE).
