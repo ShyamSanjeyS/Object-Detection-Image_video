@@ -22,7 +22,7 @@ To get started with the project, follow these steps:
    cd Real-Time-Object-Detection-Iamge-Video
    ```
 
-   [🔗 GitHub Repo Link](https://github.com/ShyamSanjeyS/Real-Time-Object-Detection-Iamge-Video)
+   [🔗 GitHub Repo Link](https://github.com/ShyamSanjeyS/Object-Detection-Image_video/)
 
 2. **Create and activate a virtual environment** (optional but recommended):
 
