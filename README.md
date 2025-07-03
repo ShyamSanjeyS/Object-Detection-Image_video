@@ -18,7 +18,7 @@ To get started with the project, follow these steps:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/ShyamSanjeyS/Object-Detection-Iamge-video.git
+   git clone https://github.com/ShyamSanjeyS/Object-Detection-Image-video.git
    cd Real-Time-Object-Detection-Iamge-Video
    ```
 
